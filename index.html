@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tyhmäjatka</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="main-header">
+        <div class="header-container">
+          <div class="logo">
+            <h1>Tyhmäjätkä</h1>
+          </div>
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li><a href="#podcast" class="nav-link">Podcast</a></li>
+              <li><a href="#blogi" class="nav-link">Blogi</a></li>
+              <li><a href="#klipit" class="nav-link">Klipit</a></li>
+              <li><a href="#ota-yhteytta" class="nav-link">Ota yhteyttä</a></li>
+              <li><a href="#about" class="nav-link">About us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      <section class="hero-video-section">
+        <div class="video-background">
+          <video 
+            class="hero-video" 
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            src="https://res.cloudinary.com/dw5q6gqb3/video/upload/v1760814825/tyhmajatka-jukki-jaahylla_gwcmqp.mp4">
+          </video>
+          <video 
+            class="hero-video" 
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            src="https://res.cloudinary.com/dw5q6gqb3/video/upload/v1760814389/tyhmajatka-subway-surfers_1_qwzw5h.mp4">
+          </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h2>Welcome to Tyhmäjätkä</h2>
+          <p>Your retro-style destination for content and community</p>
+          <button id="cta-button">Explore Now!</button>
+        </div>
+      </section>
+      
+      <main>
+        <section class="features">
+          <h3>What We Offer</h3>
+          <ul>
+            <li>🎙️ Engaging Podcasts</li>
+            <li>📝 Thoughtful Blog Posts</li>
+            <li>🎬 Creative Clips</li>
+            <li>🤝 Community Connection</li>
+          </ul>
+        </section>
+      </main>
+      
+      <footer>
+        <p>&copy; 2024 Tyhmäjätkä. Retro vibes, modern content.</p>
+      </footer>
+    </div>
+    
+    <!-- Audio element for intro -->
+    <audio id="intro-audio" preload="auto">
+      <source src="/audio/Tyhmäjätkä intro.m4a" type="audio/mp4">
+    </audio>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
