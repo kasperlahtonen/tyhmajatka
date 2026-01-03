@@ -4,84 +4,103 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tyhmäjatka</title>
+    <title>Tyhmäjätkä</title>
   </head>
   <body>
-    <div id="app">
-      <header class="main-header">
-        <div class="header-container">
-          <div class="logo">
-            <h1>Tyhmäjätkä</h1>
-          </div>
-          <nav class="main-nav">
-            <ul class="nav-list">
-              <li><a href="#podcast" class="nav-link">Podcast</a></li>
-              <li><a href="#blogi" class="nav-link">Blogi</a></li>
-              <li><a href="#klipit" class="nav-link">Klipit</a></li>
-              <li><a href="#ota-yhteytta" class="nav-link">Ota yhteyttä</a></li>
-              <li><a href="#about" class="nav-link">About us</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      
-      <section class="hero-video-section">
-        <div class="video-background">
-          <video 
-            class="hero-video" 
-            autoplay 
-            muted 
-            loop 
-            playsinline
-            src="https://res.cloudinary.com/dw5q6gqb3/video/upload/v1760814825/tyhmajatka-jukki-jaahylla_gwcmqp.mp4">
-          </video>
-          <video 
-            class="hero-video" 
-            autoplay 
-            muted 
-            loop 
-            playsinline
-            src="https://res.cloudinary.com/dw5q6gqb3/video/upload/v1760814389/tyhmajatka-subway-surfers_1_qwzw5h.mp4">
-          </video>
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <h2>Welcome to Tyhmäjätkä</h2>
-          <p>Your retro-style destination for content and community</p>
-          <button id="cta-button">Explore Now!</button>
-        </div>
-      </section>
-      
-      <main>
-        <section class="features">
-          <h3>What We Offer</h3>
-          <ul>
-            <li>🎙️ Engaging Podcasts</li>
-            <li>📝 Thoughtful Blog Posts</li>
-            <li>🎬 Creative Clips</li>
-            <li>🤝 Community Connection</li>
-          </ul>
-        </section>
-      </main>
-      
-      <footer>
-        <p>&copy; 2024 Tyhmäjätkä. Retro vibes, modern content.</p>
-      </footer>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
 
-      <!-- Folder Explorer Section -->
-      <section class="folder-explorer">
-        <h3>Explore the Archives</h3>
-        <div id="folder-container" class="folder-container">
-          <!-- Initial folder will be created by JavaScript -->
+    <!-- Hero Section -->
+    <section class="hero">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        src="assets/tyhmajatka-esittely-video.mp4"
+      ></video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-logo">Tyhmäjätkä</h1>
+      </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+      <div class="intro-content">
+        <h2 class="intro-title">TJ ei ollutkaan toimitusjohtaja vaan tyhmäjätkä</h2>
+        <p class="intro-text">Tarjon pääsyn kurkistamaan elämää mikä näyttää hyvältä kun leikkaa huonot osuudet pois eikä kerro niistä laisinkaan ja päinvastoin hauskan tarinankerronnon osuuden missä kerrotaan asiat turhankin tarkasti (mediapenikseni olisi komeampi jos näistä ei puhuttaisi).</p>
+        <blockquote class="intro-quote">
+          <p>"Jos jäät kiinni runkatessa ja lopetat, se on nolompaa kuin vain jatkaa runkkausta."</p>
+          <cite>- Gandhi</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="contact-container">
+        <h2 class="contact-title">Tässä kohtaa yleensä otetaan yhteyttä</h2>
+        
+        <div class="contact-cards">
+          <!-- Card 1: Kuumalinja -->
+          <div class="contact-card">
+            <div class="card-image">
+              <img src="https://via.placeholder.com/400x300/ff6b6b/ffffff?text=Kuumalinja" alt="Kuumalinja">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Kuumalinja</h3>
+              <p class="card-text">Kuumalinja on nope tapa ottaa yhteyttä tyhmäänjätkään, tarvitset sitten seuraa illaksi tai muuten vaan erinomaisia neuvoja niin soita tähän numeroon.</p>
+              <a href="tel:+358443655007" class="card-button">
+                <span class="phone-number">044365</span>
+                <img src="https://via.placeholder.com/60x30/000000/ffffff?text=007" alt="007" class="bond-logo">
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Aivomyrsky -->
+          <div class="contact-card">
+            <div class="card-image">
+              <img src="https://via.placeholder.com/400x300/4ecdc4/ffffff?text=Aivomyrsky" alt="Aivomyrsky">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Aivomyrsky</h3>
+              <p class="card-text">Varaa aivomysrky sessio tyhmänjätkän kanssa. Tässä voidaan miettiä vaikka ja mitä, ei ole väliä vaikka ei mietittäisi oikeastaan mitään. Tunnetaan toisella nimellä sunnuntai aamun darra.</p>
+              <a href="tel:+358443655007" class="card-button scrambled-phone">
+                <span class="scrambled">7</span>
+                <span class="scrambled">0</span>
+                <span class="scrambled">0</span>
+                <span class="scrambled">5</span>
+                <span class="scrambled">5</span>
+                <span class="scrambled">6</span>
+                <span class="scrambled">3</span>
+                <span class="scrambled">4</span>
+                <span class="scrambled">4</span>
+                <span class="scrambled">0</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Sähköinen kirje -->
+          <div class="contact-card">
+            <div class="card-image">
+              <img src="https://via.placeholder.com/400x300/95e1d3/ffffff?text=Email" alt="Sähköinen kirje">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Sähköinen kirje</h3>
+              <p class="card-text">voit thetenkin myös lähettää sähköpostia mutta vastaus ei ole taattu. Mutta jos jotenkin pääset filtterin ohi niin sitten viihde on TAATTU.</p>
+              <a href="mailto:contact@tyhmaajatka.com" class="card-button">
+                Lähetä viesti
+              </a>
+            </div>
+          </div>
         </div>
-      </section>
-    </div>
-    
-    <!-- Audio element for intro -->
-    <audio id="intro-audio" preload="auto">
-      <source src="/audio/Tyhmäjätkä intro.m4a" type="audio/mp4">
-    </audio>
-    
+        
+        <p class="contact-footer-text">Jos mikään ylläolevista vaihtoehdoista ei toimi niin voit myös sytyttää savumerkkejä Helsingin ylle (älä polta Erottajaa), pulloposti toimii myös etenkin jos viestisi on etiketissä ja pullo on täysi, kirjepöllö löytää perille kun osoitteeksi kertoo TJ:n päämaja, tai voit tulla myös suoraan paikan päälle.</p>
+      </div>
+    </section>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
