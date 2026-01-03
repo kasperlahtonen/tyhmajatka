@@ -4,7 +4,7 @@ import './style.css'
 // Load header component
 async function loadHeader() {
   try {
-    const response = await fetch('public/components/header.html')
+    const response = await fetch('/components/header.html')
     const headerHtml = await response.text()
     document.getElementById('header-placeholder').innerHTML = headerHtml
   } catch (error) {
